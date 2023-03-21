@@ -11,8 +11,10 @@ header {
 }
 
 
-.logo_header {
-    width: 150px;
+.logo1 {
+    display: flex;
+    width: 150px
+    
 }
 
 .menu {
@@ -71,6 +73,7 @@ header {
 
 .formulario {
     margin-left: 65px;
+
 }
 
 footer {
@@ -78,6 +81,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     background-color: black;
+
 }
 
 .informacion_footer {
@@ -97,14 +101,38 @@ footer {
 }
 
 
-.logo img {
-    width: 150px;
-    margin-left: 800px;
+@media screen and (max-width: 1023px) {
+
+    .menu {
+
+        gap: 30px;
+
+    }
+
+    .menu li a {
+
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .informacion_footer li {
+        justify-content: center;
+    }
+
 }
 
-/* .imagen_fondo_pintura img {
-    width: 100%;
 
-} */
+
+@media screen and (max-width: 767px) {
+
+    .logo1 {
+        justify-content: center
+        width: 75px;
+    }
+    
+
+
+}
 
 
