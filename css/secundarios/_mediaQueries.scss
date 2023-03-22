@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 1023px) {
+	.menu {
+		gap: 30px;
+		li {
+			a {
+				gap: 30px;
+				display: flex;
+				flex-direction: row;
+			}
+		}
+	}
+	.informacion_footer {
+		li {
+			justify-content: center;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.logo1 {
+		justify-content: center;
+	}
+}

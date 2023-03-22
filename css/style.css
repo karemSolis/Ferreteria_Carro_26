@@ -14,7 +14,6 @@ header {
 .logo1 {
     display: flex;
     width: 150px
-    
 }
 
 .menu {
@@ -49,8 +48,8 @@ header {
     text-decoration: none;
 }
 
-
-.destacados {
+/* revisar después para usar otra class, así dar caracteristicas iguales a los otros títulos de las otras págias */
+.destacados { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,7 +83,7 @@ footer {
 
 }
 
-.informacion_footer {
+.footer .informacion_footer {
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: column; */
@@ -95,7 +94,7 @@ footer {
     
 }
 
-.informacion_footer li {
+.footer .informacion_footer li {
     display: list-item;
     padding: 10px;
 }
@@ -123,16 +122,12 @@ footer {
 }
 
 
-
 @media screen and (max-width: 767px) {
 
     .logo1 {
         justify-content: center
-        width: 75px;
     }
     
-
-
 }
 
 

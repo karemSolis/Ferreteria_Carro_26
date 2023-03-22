@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+}
+
+.logo1 {
+  display: flex;
+  width: 150px;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: #ece8e8;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.menu li a {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.destacados {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 65px;
+}
+
+.contenedor_card {
+  padding: 40px;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formulario {
+  margin-left: 65px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: black;
+}
+
+.informacion_footer {
+  list-style-type: none;
+  color: white;
+  padding-top: 25px;
+}
+.informacion_footer li {
+  display: list-item;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    gap: 30px;
+  }
+  .menu li a {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .informacion_footer li {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo1 {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */

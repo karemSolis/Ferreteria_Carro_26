@@ -1,0 +1,22 @@
+.destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 65px;
+  }
+
+  .contenedor_card {
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .formulario {
+    margin-left: 65px;
+  }
+  
+  //no está anidado pero pasa al css que de creó automaticamente//

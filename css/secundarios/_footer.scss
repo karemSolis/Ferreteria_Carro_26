@@ -1,0 +1,18 @@
+$color_1: white;
+$background-color_1: black;
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: $background-color_1;
+}
+.informacion_footer {
+	list-style-type: none;
+	color: $color_1;
+	padding-top: 25px;
+	li {
+		display: list-item;
+		padding: 10px;
+	}
+}

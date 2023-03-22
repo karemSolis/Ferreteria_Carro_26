@@ -1,0 +1,34 @@
+$color_1: black;
+$background-color_1: black;
+$background-color_2: #ece8e8;
+
+header {
+	background-color: $background-color_1;
+}
+.logo1 {
+	display: flex;
+	width: 150px;
+}
+.menu {
+	list-style-type: none;
+	background-color: $background-color_2;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 60px;
+	li {
+		a {
+			color: $color_1;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			list-style-type: none;
+			text-decoration: none;
+		}
+	}
+}
