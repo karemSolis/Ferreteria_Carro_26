@@ -1,33 +1,65 @@
 $color_1: black;
-$background-color_1: black;
-$background-color_2: #ece8e8;
+$color_2: white;
+$background-color_1: #FFBE00;
+$background-color_2: black;
 
-header {
+
+.cajita_contacto_ubicacion {
+	gap: 5px;
+	display: flex;
 	background-color: $background-color_1;
+	color: $color_1;
+	justify-content: flex-end;
+}
+.contacto {
+	font-size: 12px;
+	text-align: right;
+	margin-bottom: 0;
+	margin-right: 15px;
+	justify-items: flex-end;
+	font-weight: 700;
+}
+.guion {
+	font-size: 12px;
+	text-align: right;
+	margin-bottom: 0;
+	margin-right: 15px;
+	justify-items: flex-end;
+}
+.ubicacion {
+	font-size: 12px;
+	text-align: right;
+	margin-bottom: 0;
+	margin-right: 15px;
+	justify-items: flex-end;
+	font-weight: 700;
+}
+header {
+	background-color: $background-color_2;
 }
 .logo1 {
 	display: flex;
 	width: 150px;
 }
 .menu {
-	list-style-type: none;
 	background-color: $background-color_2;
 	margin: 0;
+	padding-left: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 60px;
+	list-style: none;
 	li {
 		a {
-			color: $color_1;
+			color: $color_2;
 			margin-top: 15px;
 			margin-bottom: 15px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			list-style: none;
-			list-style-type: none;
+			font-weight: 500;
 			text-decoration: none;
 		}
 	}

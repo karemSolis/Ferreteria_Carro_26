@@ -11,11 +11,7 @@
     <!-- atajo  meta:kw + enter -->
     <meta name="description" content="Home Ferretería Carro 26">
     <!-- atajo meta:desc -->
-<!--  
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-    </style>
-  -->
+
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -24,10 +20,18 @@
 </head>
 
 <body>
-<!-- NAVEGADOR-->
 
+<!-- INFORMACION ANTES DEL NAVBAR -->
+<div class="cajita_contacto_ubicacion" class="flex-container">
+  <p class="contacto" class="flex-item">Contacto: +569 8280 5033 </p>
+  <p class="guion">-</p>
+  <p class="ubicacion" class="flex-item">Ubicación: Av. Colón 2676, Valparaíso, Chile</p> 
+</div>
+
+<!-- NAVBAR-->
 <header>
-<div class="logo1">
+
+  <div class="logo1">
         <img src="./img/LOGO.svg" alt="logoFerreteríaCarro26" class="logo_header">
 </div> 
 
@@ -37,22 +41,23 @@
         <li><a href="./solventes.html">Solventes</a></li>
         <li><a href="./complementos.html">Complementos</a></li> 
         <li><a href="./superficies.html">Superficies</a></li>
+        <li><a href="./quienesSomos.html">Quienes Somos</a> </li>
     </ul>
 
 </header>
-<!-- falta carro de compras y buscador, buscar información, que el menú se despliegue-->
+<!-- PROYECCIÓN: falta carro de compras y buscador, buscar información, mejorar menú, ordenar arquitectura de la información (categorías principalmente)-->
 
-<!-- CARRUSEL -->
+<!-- CARRUSEL BOOTSTRAP-->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" class="carrusel_c26">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="./img/img carrusel 50 off.jpg" class="d-block w-100" alt="Imagen 50% off">
     </div>
     <div class="carousel-item">
-      <img src="./img/img carrusel trabajo en equipo.jpg" class="d-block w-100" alt="Chico chica maestros saludo con mano empuñada">
+      <img src="./img/trabajadores-masculinos-femeninos-ropa-trabajo-amarillo.jpg" class="d-block w-100" alt="Chico chica maestros saludo con mano empuñada">
     </div>
     <div class="carousel-item">
-      <img src="./img/img más herramientas carrusel 3.jpg" class="d-block w-100" alt="Galleta de corte con texto, consulta por más herramintas">
+      <img src="./img/más herramientas.jpg" class="d-block w-100" alt="Galleta de corte con texto, consulta por más herramintas">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -64,124 +69,147 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<!-- buscar imagenes de misma medida, ajustar tamaños a pantalla -->
 
-<!-- PRODUCTOS DESTACADOS -->
-<h2 class="destacados">Destacados</h2>
-<div class="contenedor_card">
+
+<!-- PRODUCTOS DESTACADOS/CATEGORÍAS --> 
+<h2 class="destacados-categorias">Destacados</h2> 
+
+<!-- CARDS -->
+<section class="cards-gran-contenedor">
 
 <!-- card 1-->
-<div class="card" style="width: 18rem;">
-  <img src="./img/aceite impregnante.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards">
+  <div class="imagen-card" class="card">
+  <img src="./img/aceite impregnante.png" alt="Aceite impregnante">
+  </div>
+  <div class="contenido-card">
+    <h5 class="card-titulo">Aceite impregnante</h5>
+    <p class="card-texto">Aceite impregnante para maderas interior u exterior, protección de rayos U.V. Protección hidrorrepelente...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
 
 <!-- card 2 -->
-<div class="card" style="width: 18rem;">
-  <img src="./img/Esmalte al agua home blanco.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards" >
+  <div class="imagen-card" class="card">
+  <img src="./img/Esmalte al agua home blanco.png" alt="Pintura Esmalte al agua home blanco">
+  </div>
+  <div class="contenido-card">
+    <h5 class="card-titulo">Esmalte al agua Sanher (100% lavable)</h5>
+    <p class="card-texto">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
   
   <!-- card 3 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./img/creolina.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <div class="imagen-card" class="card">
+    <img src="./img/creolina.png" alt="creolina">
+    </div>
+    <div class="contenido-card">
+      <h5 class="card-titulo">Creolina</h5>
+      <p class="card-texto">La creolina es un desinfectante natural que se emplea para limpiar, desinfectar y eliminar olores fuertes...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
 <!-- card 4 -->
-<div class="card" style="width: 18rem;">
-  <img src="./img/cemeto blanco.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards">
+  <div class="imagen-card" class="card">
+  <img src="./img/cemeto blanco.png" alt="cemento blanco">
+  </div>
+  <div class="contenido-card">
+    <h5 class="card-titulo">Esmalte al agua Sanher</h5>
+    <p class="card-texto">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
 
   <!-- card 5 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/alcohol isopropilico.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <div class="imagen-card" class="card">
+    <img src="./img/alcohol isopropilico.png" alt="alcohol isopropílico">
+    </div>
+    <div class="contenido-card">
+      <h5 class="card-titulo">Alcohol isopropílico</h5>
+      <p class="card-texto">Alcohol isopropílico se usa en la limpieza de componentes, equipos de electrónica y lentes de objetivos fotográficos...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
   <!-- card 6 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/paños.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <div class="imagen-card" class="card">
+    <img src="./img/paños.png" alt="Paños">
+    </div>
+    <div class="contenido-card">
+      <h5 class="card-titulo">Esmalte al agua Sanher</h5>
+      <p class="card-texto">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
   <!-- card 7 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/Latex-Deco al agua antihongos sanher variedad colores.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <div class="imagen-card" class="card">
+    <img src="./img/Latex-Deco al agua antihongos sanher variedad colores.png" alt="Pintura Latex deco al agua antihongos Sanher variedad de colores">
+    </div>
+    <div class="contenido-card">
+      <h5 class="card-titulo">Látex Deco (alto poder cubriente)</h5>
+      <p class="card-texto">Pintura base agua, formulada a base de resinas acrílicas en emulsión acuosa, pigmentos...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
+  
 
   <!-- card 8 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/buzo de papel.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <div class="imagen-card" class="card">
+    <img src="./img/buzo de papel.png" alt="Buzo de papel">
+    </div>
+    <div class="contenido-card">
+      <h5 class="card-titulo">Esmalte al agua Sanher</h5>
+      <p class="card-texto">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
-</div>
+</section>
+
 
 <!-- MARCAS 
-<h2 class>Marcas</h2>
+<h2 class>Marcas</h2> 
 -->
 
 <!-- FORMULARIO -->
+
 <section class="formulario">
-  <h2>Cotiza con nosotros</h2>
-<div class="mb-3" >
+  <h2 class="form-titulo">Cotiza con nosotros</h2>
+<div class="mb-3" class="form-titulo" >
   <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo electrónico</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Deja aquí tu mensaje</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 <div class="col-auto">
-  <button type="submit" class="btn btn-primary mb-3">Enviar mensaje</button>
+  <button type="submit" class="btn mb-3">Enviar mensaje</button>
 </div>
 </section>
 
-<Footer>     <!-- ubicación, logo, telefonos -->
+<!-- FOOTER -->
+<footer>    
     <ul class="informacion_footer">
       <li>Ubicación: Av. Colón 2676, Valparaíso, Chile</li>
       <li>Contacto: +569 82805033</li>
     </ul>
-</Footer>
+</footer>
+
+<!-- COPYRIGHT -->
+<div class="Copyright" class="flex-container">
+  <p class="p-copi" class="flex-item">© Copyright 2023. All Rights Reserved.</p>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

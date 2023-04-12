@@ -1,22 +1,89 @@
-.destacados {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 65px;
-  }
+$color_1: black;
+$color_2: white;
+$background-color_1: rgb(255, 255, 255);
+$background-color_2: rgb(117, 80, 162);
+$background-color_3: white;
 
-  .contenedor_card {
-    padding: 40px;
-    gap: 20px;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .formulario {
-    margin-left: 65px;
-  }
-  
-  //no está anidado pero pasa al css que de creó automaticamente//
+.destacados-categorias {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2rem;
+}
+.cards-gran-contenedor {
+	display: flex;
+	margin: 2rem;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+.cards {
+	border-radius: 5px;
+	border: 1px solid rgba(80, 77, 77, 0.322);
+	display: flex;
+	width: 18rem;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.imagen-card {
+	img {
+		width: 100%;
+		vertical-align: middle;
+	}
+}
+.contenido-card {
+	width: 100%;
+	flex-direction: column;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	color: $color_1;
+	background-color: $background-color_1;
+}
+.card-titulo {
+	flex-grow: 1;
+	width: 100%;
+	margin: auto;
+	padding: 2px;
+	margin-bottom: 30px;
+	font-size: large;
+}
+.card-texto {
+	font-size: medium;
+	line-height: 1.4;
+	flex-grow: 1;
+	width: 100%;
+	margin: auto;
+	padding: 2px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.btn {
+	font-size: medium;
+	border-radius: 10px;
+	text-decoration: none;
+	color: $color_2;
+	padding: 7px;
+	align-items: center;
+	background-color: $background-color_2;
+}
+.formulario {
+	margin: 5rem 2rem 5rem 2rem;
+	gap: 2rem;
+}
+.form-titulo {
+	margin-bottom: 2rem;
+}
+.quienesSomos-imagen {
+	img {
+		width: 100%;
+	}
+}
+.quienesSomos {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $background-color_3;
+	color: $color_1;
+	display: flex;
+	margin: 5rem;
+}

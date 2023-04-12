@@ -13,10 +13,6 @@
     <!-- atajo meta:desc -->
     
     
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-    </style> -->
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
@@ -24,9 +20,17 @@
 </head>
 
 <body>
-<!-- NAVEGADOR-->
 
+<!-- INFORMACION ANTES DEL NAVBAR -->
+<div class="cajita_contacto_ubicacion" class="flex-container">
+  <p class="contacto" class="flex-item">Contacto: +569 8280 5033 </p>
+  <p class="guion">-</p>
+  <p class="ubicacion" class="flex-item">Ubicación: Av. Colón 2676, Valparaíso, Chile</p> 
+</div>
+
+<!-- NAVBAR-->
 <header>
+
 <div class="logo1">
         <img src="./img/LOGO.svg" alt="logoFerreteríaCarro26" class="logo_header">
 </div> 
@@ -37,106 +41,114 @@
   <li><a href="./solventes.html">Solventes</a></li>
   <li><a href="./complementos.html">Complementos</a></li> 
   <li><a href="./superficies.html">Superficies</a></li>
+  <li><a href="./quienesSomos.html">Quienes Somos</a> </li>
 </ul>
 
 </header>
 
-<!-- PRODUCTOS DESTACADOS -->
-<h2 class="destacados">Diluyentes, solventes y limpiadores</h2>
-<div class="contenedor_card">
+<!-- PRODUCTOS DESTACADOS/CATEGORÍAS -->
+<h2 class="destacados-categorias">Diluyentes, solventes y limpiadores</h2>
+
+<!-- CARDS -->
+<section class="cards-gran-contenedor">
 
 <!-- card 1-->
-<div class="card" style="width: 18rem;">
-  <img src="./img/aceite impregnante.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards">
+  <img src="./img/aceite impregnante.png" class="card-img-top" alt="Aceite impregnante">
+  <div class="contenido-card">
+    <h5 class="card-titulo">Aceite impregnante</h5>
+    <p class="card-texto">Aceite impregnante para maderas interior u exterior, protección de rayos U.V. Protección hidrorrepelente...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
 
 <!-- card 2 -->
-<div class="card" style="width: 18rem;">
-  <img src="./img/acido muriatico.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards">
+  <img src="./img/acido muriatico.png" class="card-img-top" alt="Ácido muriático">
+  <div class="contenido-card">
+    <h5 class="card-titulo">Ácido muriático</h5>
+    <p class="card-texto">Producto para la neutralización de superficies alcalinas como cemento y hormigón o quema de estuco que evita la formación ...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
   
   <!-- card 3 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./img/aguarrás mineral.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <img src="./img/aguarrás mineral.png" class="card-img-top" alt="Aguarrás mineral">
+    <div class="contenido-card">
+      <h5 class="card-titulo">Aguarrás</h5>
+      <p class="card-texto">Producto usado como solvente en la preparación de diluyentes. Resinas, pigmentos, pinturas, barnices, etc...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
 <!-- card 4 -->
-<div class="card" style="width: 18rem;">
-  <img src="./img/alcohol isopropilico.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esmalte al agua Sanher</h5>
-    <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
+<div class="cards">
+  <img src="./img/alcohol isopropilico.png" class="card-img-top" alt="alcohol isopropílico">
+  <div class="contenido-card">
+    <h5 class="card-titulo">Alcohol isopropílico</h5>
+    <p class="card-texto">Alcohol isopropílico se usa en la limpieza de componentes, equipos de electrónica y lentes de objetivos fotográficos...</p>
+    <a href="#" class="btn">Ver más</a>
   </div>
 </div>
 
   <!-- card 5 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/diluyente sintetico.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <img src="./img/diluyente sintetico.png" class="card-img-top" alt="Diluyente sintético">
+    <div class="contenido-card">
+      <h5 class="card-titulo">Diluyente sintético</h5>
+      <p class="card-texto">Líquido incoloro o levemente amarillento de olor característico. Mezcla de hidrocarburos alifáticos, químicamente establ...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
   <!-- card 6 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/creolina.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <img src="./img/creolina.png" class="card-img-top" alt="creolina">
+    <div class="contenido-card">
+      <h5 class="card-titulo">Creolina</h5>
+      <p class="card-texto">La creolina es un desinfectante natural que se emplea para limpiar, desinfectar y eliminar olores fuertes...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
   <!-- card 7 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/diluyente duco invierno.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <img src="./img/diluyente duco invierno.png" class="card-img-top" alt="Diluyente duco invierno">
+    <div class="contenido-card">
+      <h5 class="card-titulo">Diluyente duco invierno</h5>
+      <p class="card-texto">Es muy útil para lograr la reducción de la viscosidad en lacas y selladores a base de piroxilina en talleres de carpint...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
   </div>
 
   <!-- card 8 -->
-
-  <div class="card" style="width: 18rem;">
-    <img src="./img/diluyente duco multiuso.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Esmalte al agua Sanher</h5>
-      <p class="card-text">Producto de terminación base agua, para ser aplicado en superficies de albañilería como estucos, ladrillos, hormigón...</p>
-      <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="cards">
+    <img src="./img/diluyente duco multiuso.png" class="card-img-top" alt="diluyente duco multiuso">
+    <div class="contenido-card">
+      <h5 class="card-titulo">Diluyente duco multiuso</h5>
+      <p class="card-texto">Dilución de lacas y selladores a la piroxilina y pinturas duco. Limpieza y remoción de óleos, esmaltes, barnices, restos de...</p>
+      <a href="#" class="btn">Ver más</a>
     </div>
 </div>
-</div>
-<Footer>     <!-- ubicación, logo, telefonos -->
+
+</section>
+
+
+
+<!-- FOOTER -->
+<Footer>  
     <ul class="informacion_footer">
       <li>Ubicación: Av. Colón 2676, Valparaíso, Chile</li>
       <li>Contacto: +569 82805033</li>
     </ul>
-
-
 </Footer>
+
+
+<!-- COPYRIGHT -->
+<div class="Copyright" class="flex-container">
+  <p class="p-copi" class="flex-item">© Copyright 2023. All Rights Reserved.</p>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

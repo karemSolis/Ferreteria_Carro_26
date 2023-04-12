@@ -1,18 +1,51 @@
 $color_1: white;
+$color_2: black;
 $background-color_1: black;
+$background-color_2: rgb(117, 80, 162);
+$background-color_3: white;
 
 footer {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	background-color: $background-color_1;
+	color: $color_1;
+	display: flex;
+	justify-content: flex-end;
 }
 .informacion_footer {
-	list-style-type: none;
-	color: $color_1;
-	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
 	li {
-		display: list-item;
-		padding: 10px;
+		list-style-type: none;
+		text-align: end;
+		font-size: 12px;
+		padding: 5px;
+		margin-right: 2rem;
+		margin-top: 1rem;
 	}
 }
+.Copyright {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: small;
+	background-color: $background-color_2;
+	color: $color_2;
+	justify-content: center;
+}
+.p-copi {
+	padding: 5px;
+}
+.quienesSomos-imagen {
+	img {
+		width: 100%;
+	}
+}
+.quienesSomos {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $background-color_3;
+	color: $color_2;
+	display: flex;
+	margin: 5rem;
+}
+

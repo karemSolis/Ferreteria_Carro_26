@@ -5,11 +5,58 @@
 
 }
 
-header {
-    background-color: black;
+.cajita_contacto_ubicacion {
+
+    gap: 5px;
+
+    display: flex;
+
+
+    background-color:#FFBE00;
+    color: black;    
+    justify-content: flex-end;
 
 }
 
+.contacto {
+    font-size: 12px;
+
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 15px;
+    justify-items: flex-end;
+    font-weight: 700;
+
+}
+
+.guion {
+    font-size: 12px;
+
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 15px;
+    justify-items: flex-end;
+}
+
+.ubicacion {
+
+    font-size: 12px;
+
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 15px;
+    justify-items: flex-end;
+    font-weight: 700;
+
+
+} 
+
+
+/* --------------------antes del menú------------------- */
+
+header {
+    background-color: black; 
+}
 
 .logo1 {
     display: flex;
@@ -18,9 +65,10 @@ header {
 
 .menu {
     
-    list-style-type: none;
-    background-color:#ece8e8;
+
+    background-color:black;
     margin: 0;
+    padding-left: 0;
 
 
     display: flex;
@@ -30,11 +78,16 @@ header {
     
     gap: 60px;
 
+    list-style: none;
+
+
+
 
 }
 
 .menu li a {
-    color:black;
+
+    color:white;
 
     margin-top: 15px;
     margin-bottom: 15px;
@@ -43,61 +96,172 @@ header {
     justify-content: center;
     align-items: center;
 
-    list-style: none;
-    list-style-type: none;
+    font-weight: 500;
+
     text-decoration: none;
 }
 
+
+
 /* revisar después para usar otra class, así dar caracteristicas iguales a los otros títulos de las otras págias */
-.destacados { 
+.destacados-categorias { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 65px;
+    margin: 2rem;
+
+}
+
+.cards-gran-contenedor {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    flex-grow:1;
+}
+
+.cards {
+    border-radius: 5px;
+
+    border: 1px solid rgba(80, 77, 77, 0.322);
+    display: flex;
+    width: 18rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.imagen-card img {
+    
+    width: 100%;
+    vertical-align: middle;
+    
+
+
+}
+
+.contenido-card {
+    width: 100%;
+    flex-direction: column;
+
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    background-color:rgb(255, 255, 255)
     
 }
 
-.contenedor_card {
-    padding: 40px;
-    gap: 20px;
+.card-titulo {
+    flex-grow:1;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 30px;
+    font-size: large;
 
-    justify-content: center;
+}
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.card-texto {
+    font-size: medium;
+    line-height: 1.4;
+    flex-grow:1;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 30px;
+    text-align:left
+    
+
+}
+
+.btn  {
+    font-size: medium;
+    border-radius:10px;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    align-items: center;
+    background-color: rgb(117, 80, 162);
     
 }
 
 .formulario {
-    margin-left: 65px;
+
+margin: 5rem 2rem 5rem 2rem;
+gap: 2rem;
 
 }
+
+.form-titulo {
+margin-bottom: 2rem;
+}
+
+.quienesSomos-imagen img {
+    width: 100%;
+
+}
+
+.quienesSomos {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    display: flex;
+    margin: 5rem
+    
+    
+    
+}
+
+/* ----------------------------------- */
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     background-color: black;
-
-}
-
-.footer .informacion_footer {
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
-    list-style-type: none;
     color: white;
-    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
 
     
 }
 
-.footer .informacion_footer li {
-    display: list-item;
-    padding: 10px;
+.informacion_footer {
+    display: flex;  
+    flex-direction: column;
+
+
 }
+
+.informacion_footer li {
+    list-style-type: none;
+    text-align: end;
+    font-size: 12px;
+    padding: 5px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    }
+
+
+.Copyright {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    background-color:  rgb(117, 80, 162);
+    color: black;
+    justify-content: center;
+
+}
+
+.p-copi {
+    padding: 5px;
+}
+
+
 
 
 @media screen and (max-width: 1023px) {
