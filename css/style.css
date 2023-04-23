@@ -536,8 +536,19 @@ margin-right: 60px;
     .logo1 {
         justify-content: center
     }
+
+    .seccion-principal-blog {
+        width: 100%;
+    }
+
+
     
 }
 
+@media screen and (max-width: 401px) {
+    .seccion-principal-blog {
+        width: 100%;
+    }
+}
 
 

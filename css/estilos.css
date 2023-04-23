@@ -223,6 +223,14 @@ footer {
   .logo1 {
     justify-content: center;
   }
+  .seccion-principal-blog {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 401px) {
+  .seccion-principal-blog {
+    width: 100%;
+  }
 }
 .titulo-pagina-producto {
   display: flex;
@@ -275,6 +283,7 @@ ul {
 .contenedor-nav {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.86);
@@ -287,6 +296,7 @@ ul {
   list-style-type: none;
   gap: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -296,6 +306,7 @@ ul {
 
 .menu-blog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 40px;
   gap: 2rem;
@@ -308,6 +319,7 @@ ul {
   background-image: url("../img/300px.jpeg");
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -339,6 +351,7 @@ ul {
   width: 100%;
   padding: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: end;
 }
