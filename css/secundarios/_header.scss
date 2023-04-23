@@ -64,3 +64,9 @@ header {
 		}
 	}
 }
+.translate {
+	transition: 1s;
+	&:hover {
+		transform: translateY(-10px);
+	}
+}

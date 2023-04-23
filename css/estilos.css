@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-* {
+*, a, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-ul {
+  list-style: none;
   list-style-type: none;
-}
-
-a {
   text-decoration: none;
 }
 
@@ -76,6 +71,13 @@ header {
   align-items: center;
   font-weight: 500;
   text-decoration: none;
+}
+
+.translate {
+  transition: 1s;
+}
+.translate:hover {
+  transform: translateY(-10px);
 }
 
 .destacados-categorias {
@@ -194,27 +196,14 @@ footer {
 .Copyright {
   display: flex;
   flex-wrap: wrap;
-  font-size: small;
-  background-color: rgb(117, 80, 162);
-  color: black;
+  font-size: 9px;
+  background-color: black;
+  color: white;
   justify-content: center;
 }
 
 .p-copi {
   padding: 5px;
-}
-
-.quienesSomos-imagen img {
-  width: 100%;
-}
-
-.quienesSomos {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  color: black;
-  display: flex;
-  margin: 5rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -234,4 +223,192 @@ footer {
   .logo1 {
     justify-content: center;
   }
+}
+.titulo-pagina-producto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.titulo-informacion-Especificaciones {
+  font-size: 14px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+
+.contenedor-imagenes-txt {
+  display: flex;
+  flex-wrap: row;
+  gap: 20px;
+  margin: 5rem;
+}
+
+.img-producto {
+  width: 100%;
+}
+.img-producto img {
+  transition-duration: 0.4s;
+}
+.img-producto img:hover {
+  transform: scale(1.5);
+}
+
+.informacion-del-producto {
+  font-size: 12px;
+}
+
+.especificaciones {
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-especificaciones {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.contenedor-nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.86);
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+.encabezado-nav {
+  list-style-type: none;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-blog {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  gap: 2rem;
+}
+.menu-blog li a {
+  color: white;
+}
+
+.seccion-principal-blog {
+  background-image: url("../img/300px.jpeg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-principal-blog h2 {
+  margin-left: 40px;
+  font-size: 80px;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 16px;
+  text-shadow: 15px 0px 5px rgba(15, 15, 15, 0.608);
+}
+
+.titulo-temas-blog {
+  padding: 100px;
+}
+.titulo-temas-blog h2 {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 40px;
+}
+
+.tarjeta {
+  background-color: burlywood;
+  height: 500px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.tarjeta-titulo {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 10px;
+}
+.tarjeta-titulo a {
+  color: black;
+}
+
+.tema1 {
+  background-image: url("../img/joven-hermosa-mujer-hace-reparaciones-apartamento-pinta-paredes-rodillo-trabajo-molares.jpg");
+  background-size: cover;
+}
+
+.tema2 {
+  background-image: url("../img/familia-joven-cepillando-pared-juntos-color-azul.jpg");
+  background-size: cover;
+}
+
+.tema3 {
+  background-image: url("../img/hombre-traje-materiales-peligrosos-usando-pistola-pintar-auto-tienda.jpg");
+  background-size: cover;
+}
+
+.contenedor-nav-temas {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+}
+
+.informacion-temas {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+}
+.informacion-temas h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.informacion-temas h6 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.img-txt-p {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.img-txt-p img {
+  margin: 40px;
+}
+.img-txt-p p {
+  text-align: justify;
+  line-height: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.div-txt-blog {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,93 @@
+$color_1: white;
+$color_2: black;
+$background-color_1: rgba(0, 0, 0, 0.86);
+$background-color_2: burlywood;
+$background-color_3: rgba(255, 255, 255, 0.6);
+
+.contenedor-nav {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_1;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+}
+.encabezado-nav {
+	list-style-type: none;
+	gap: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	width: 100px;
+}
+.menu-blog {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 40px;
+	gap: 2rem;
+	li {
+		a {
+			color: $color_1;
+		}
+	}
+}
+.seccion-principal-blog {
+	background-image: url("../img/300px.jpeg");
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		margin-left: 40px;
+		font-size: 80px;
+		color: $color_1;
+		padding: 9px 20px;
+		border-radius: 16px;
+		text-shadow: 15px 0px 5px rgba(15, 15, 15, 0.608);
+	}
+}
+.titulo-temas-blog {
+	padding: 100px;
+	h2 {
+		margin-bottom: 40px;
+		text-align: left; 
+	}
+}
+.tarjetas {
+	display: flex;
+	gap: 40px;
+}
+.tarjeta {
+	background-color: $background-color_2;
+	height: 500px;
+	width: 100%;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.tarjeta-titulo {
+	color: $color_2;
+	background-color: $background-color_3;
+	padding: 20px;
+	border-radius: 30px;
+	font-size: 10px;
+	a {
+		color: $color_2;
+	}
+}
+.tema1 {
+	background-image: url("../img/joven-hermosa-mujer-hace-reparaciones-apartamento-pinta-paredes-rodillo-trabajo-molares.jpg");
+	background-size: cover;
+}
+.tema2 {
+	background-image: url("../img/familia-joven-cepillando-pared-juntos-color-azul.jpg");
+	background-size: cover;
+}
+.tema3 {
+	background-image: url("../img/hombre-traje-materiales-peligrosos-usando-pistola-pintar-auto-tienda.jpg");
+	background-size: cover;
+}
